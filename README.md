@@ -52,7 +52,7 @@ https://stackoverflow.com/questions/46428752/how-to-clear-or-clean-specific-pod-
 1. Put all the `pubspec.yaml` dependencies to the latest version.
 
     ```
-    pub outdated
+    dart pub outdated
     ```
 
 2. Delete `pubspec.lock`, `Pods` folder in `ios` and `Podfile.lock`

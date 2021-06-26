@@ -32,6 +32,7 @@ target 'Runner' do
   # For example, to use Firebase Authentication and Cloud Firestore
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  # pod 'GoogleMLKit/FaceDetection'
 
   use_frameworks!
   use_modular_headers!
