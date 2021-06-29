@@ -26,7 +26,7 @@ platform :ios, ‘10.0’
 # Add the pods for the Firebase products you want to use in your app
 # For example, to use Firebase Authentication and Cloud Firestore
 pod 'Firebase/Auth'
-pod 'Firebase/Firestore'
+pod 'FirebaseFirestore', :git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => '8.0.0' # A pre-complile version
 ```
 
 [Mac M1 issue](https://github.com/CocoaPods/CocoaPods/issues/10718)
@@ -40,6 +40,26 @@ pod 'Firebase/Firestore'
     ```
     arch -x86_64 pod install
     ```
+
+Firebase Messaging
+
+Xcode: TARGETS -> Runner -> Signing & Capabilities -> Capability
+
+-   Background Modes - Background fetch
+-   Background Modes - Remote notifications
+-   Push Notifications
+
+Apple Developer -> Certificates, Identifiers & Profiles
+
+-   Identifiers
+-   Profiles
+-   Keys
+
+Firebase Console
+
+-   Project settings - Cloud Messaging - iOS app configuration - APNs Authentication Key
+
+    Note: Upload APNs Auth Key downloaded from Apple Developer(Certificates, Identifiers & Profiles - Keys)
 
 ## Re-install dependencies from clearing Pod
 

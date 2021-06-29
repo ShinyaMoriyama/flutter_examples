@@ -31,7 +31,7 @@ target 'Runner' do
   # Add the pods for the Firebase products you want to use in your app
   # For example, to use Firebase Authentication and Cloud Firestore
   pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestore', :git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => '8.0.0' # A pre-complile version
   # pod 'GoogleMLKit/FaceDetection'
 
   use_frameworks!
