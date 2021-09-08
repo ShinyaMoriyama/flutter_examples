@@ -10,6 +10,8 @@ class DragWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("rebuild");
+
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -18,6 +20,7 @@ class DragWidget extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 30),
             child: Consumer<GameScore>(
               builder: (context, game, _) {
+                print("rebuild total");
                 return Text(
                   "Total: ${game.score}",
                   style:

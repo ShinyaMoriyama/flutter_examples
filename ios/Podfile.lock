@@ -110,6 +110,10 @@ PODS:
   - PromisesObjC (1.2.12)
   - sensors (0.0.1):
     - Flutter
+  - url_launcher (0.0.1):
+    - Flutter
+  - webview_flutter (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - camera (from `.symlinks/plugins/camera/ios`)
@@ -126,6 +130,8 @@ DEPENDENCIES:
   - image_picker (from `.symlinks/plugins/image_picker/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - sensors (from `.symlinks/plugins/sensors/ios`)
+  - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
+  - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
 
 SPEC REPOS:
   trunk:
@@ -170,6 +176,10 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/path_provider/ios"
   sensors:
     :path: ".symlinks/plugins/sensors/ios"
+  url_launcher:
+    :path: ".symlinks/plugins/url_launcher/ios"
+  webview_flutter:
+    :path: ".symlinks/plugins/webview_flutter/ios"
 
 CHECKOUT OPTIONS:
   FirebaseFirestore:
@@ -202,6 +212,8 @@ SPEC CHECKSUMS:
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   sensors: 84eb7a30e47a649e4172b71d6e81be614c280336
+  url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
+  webview_flutter: 3603125dfd3bcbc9d8d418c3f80aeecf331c068b
 
 PODFILE CHECKSUM: c74b6940af469fd3493cab0cd88ee2a007317823
 

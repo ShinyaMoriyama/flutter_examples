@@ -22,7 +22,7 @@ class FavoriteList extends StatelessWidget {
 
         if (languages.hasData) {
           final data = languages.data;
-
+          print("data: ${data?.docs.length}");
           if (data != null) {
             return Column(
               children: [
