@@ -29,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     // Also handle any interaction when the app is in the background via a
     // Stream listener
+    // ********* Run when opening from the backgound *********
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
       print('onMessageOpenedApp');
       print(message.data);
@@ -43,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
 
-    proccessFirebaseMessaging();
+    // proccessFirebaseMessaging();
   }
 
   @override
