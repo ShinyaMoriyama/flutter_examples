@@ -78,6 +78,7 @@ class HorizontalPatternForwardHatchBarChart extends StatelessWidget {
 
     return [
       new charts.Series<OrdinalSales, String>(
+          seriesColor: charts.ColorUtil.fromDartColor(Colors.purpleAccent),
           id: 'Desktop',
           domainFn: (OrdinalSales sales, _) => sales.year,
           measureFn: (OrdinalSales sales, _) => sales.sales,
@@ -85,12 +86,13 @@ class HorizontalPatternForwardHatchBarChart extends StatelessWidget {
           labelAccessorFn: (OrdinalSales sales, _) =>
               '${sales.sales.toString()}'),
       new charts.Series<OrdinalSales, String>(
+          seriesColor: charts.ColorUtil.fromDartColor(Colors.purple),
           id: 'Tablet',
           domainFn: (OrdinalSales sales, _) => sales.year,
           measureFn: (OrdinalSales sales, _) => sales.sales,
           data: tableSalesData,
           fillPatternFn: (OrdinalSales sales, _) =>
-              charts.FillPatternType.forwardHatch,
+              charts.FillPatternType.solid,
           labelAccessorFn: (OrdinalSales sales, _) =>
               '${sales.sales.toString()}'),
       // new charts.Series<OrdinalSales, String>(
@@ -115,7 +117,14 @@ class HorizontalPatternForwardHatchBarChart extends StatelessWidget {
         labelPosition: charts.BarLabelPosition.outside,
       ),
       behaviors: [
-        new charts.SeriesLegend(position: charts.BehaviorPosition.bottom)
+        new charts.SeriesLegend(position: charts.BehaviorPosition.bottom),
+        new charts.ChartTitle('End title Tablet',
+            titleStyleSpec: charts.TextStyleSpec(
+              fontFamily: "VarelaRound",
+            ),
+            behaviorPosition: charts.BehaviorPosition.top,
+            titleOutsideJustification:
+                charts.OutsideJustification.middleDrawArea),
       ],
     );
   }

@@ -37,7 +37,8 @@ AppConfig get defaultConfig {
     appLink: '',
     theme: new ThemeData(
       brightness: Brightness.light,
-      primarySwatch: Colors.lightBlue,
+      primarySwatch: Colors.purple,
+      fontFamily: "VarelaRound",
     ),
     showPerformanceOverlay: false,
   );
