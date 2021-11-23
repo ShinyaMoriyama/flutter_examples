@@ -36,6 +36,7 @@ AppConfig get defaultConfig {
     appName: 'Charts Gallery',
     appLink: '',
     theme: new ThemeData(
+      scaffoldBackgroundColor: Colors.purple.shade200,
       brightness: Brightness.light,
       primarySwatch: Colors.purple,
       fontFamily: "VarelaRound",

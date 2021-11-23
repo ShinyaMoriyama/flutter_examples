@@ -7,9 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:firebase_analytics/observer.dart';
 
 class TabsPage extends StatefulWidget {
-  const TabsPage(this.observer, {Key? key}) : super(key: key);
+  // const TabsPage(this.observer, {Key? key}) : super(key: key);
+  const TabsPage({Key? key}) : super(key: key);
 
-  final FirebaseAnalyticsObserver observer;
+  // final FirebaseAnalyticsObserver observer;
 
   static const String routeName = '/tab';
 
@@ -37,12 +38,12 @@ class _TabsPageState extends State<TabsPage>
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    widget.observer.subscribe(this, ModalRoute.of(context)! as PageRoute);
+    // widget.observer.subscribe(this, ModalRoute.of(context)! as PageRoute);
   }
 
   @override
   void dispose() {
-    widget.observer.unsubscribe(this);
+    // widget.observer.unsubscribe(this);
     super.dispose();
   }
 
@@ -88,8 +89,8 @@ class _TabsPageState extends State<TabsPage>
   }
 
   void _sendCurrentTabToAnalytics() {
-    widget.observer.analytics.setCurrentScreen(
-      screenName: '${TabsPage.routeName}/tab$selectedIndex',
-    );
+    // widget.observer.analytics.setCurrentScreen(
+    //   screenName: '${TabsPage.routeName}/tab$selectedIndex',
+    // );
   }
 }
